@@ -1,8 +1,19 @@
 meta {
     title: "Historical Objects";
-    icon: "";
+    icon: "https://raw.githubusercontent.com/Yukiroshi/Historical-Objects/refs/heads/main/Distinctive_emblem_for_cultural_property.svg";
     version: "1.0";
     description: "Improved style for historical objects, adds new icons for niche tags.";
     author: "Yukiroshi";
     link: "";
 }
+
+*[heritage]
+{
+    icon-image: "https://raw.githubusercontent.com/Yukiroshi/Historical-Objects/refs/heads/main/Distinctive_emblem_for_cultural_property.svg";
+    icon-width: 8;
+    icon-position: center;
+    icon-offset-x: -20;
+    z-index: 20;
+}
+
+
