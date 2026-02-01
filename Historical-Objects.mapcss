@@ -7,13 +7,50 @@ meta {
     link: "";
 }
 
-*[heritage]
+way[heritage]!:closed::highlight, way[historic]!:closed::highlight
 {
-    icon-image: "https://raw.githubusercontent.com/Yukiroshi/Historical-Objects/refs/heads/main/Distinctive_emblem_for_cultural_property.svg";
-    icon-width: 8;
-    icon-position: center;
-    icon-offset-x: -20;
+    color: #002266;
+    width: 7;
+    opacity: 0.5;
+    object-z-index: 5.0;
+}
+way[heritage]!:closed
+{
+    repeat-image: "https://raw.githubusercontent.com/Yukiroshi/Historical-Objects/refs/heads/main/Distinctive_emblem_for_cultural_property.svg";
+    repeat-image-spacing: 250;
+    repeat-image-align: bottom;
+    repeat-image-offset: 5;
+    z-index: 1.0;
+}
+area[historic]:closed::highlight, area[heritage]:closed::highlight
+{
+    width: 4;
+    color: #002266;
+    dashes: 50,25;
+    opacity: 0.7;
     z-index: 20;
 }
-
-
+relation[historic]::highlight > way
+{
+    width: 4;
+    color: #002266;
+    dashes: 50,25;
+    opacity: 0.7;
+    z-index: 20;
+}
+area[heritage]:closed
+{
+    icon-image: "https://raw.githubusercontent.com/Yukiroshi/Historical-Objects/refs/heads/main/Distinctive_emblem_for_cultural_property.svg";
+    icon-width: 16;
+    icon-position: center;
+    icon-offset-y: 20;
+    fill-opacity: 0.5;
+}
+node[heritage]::plaque
+{
+    icon-image: "https://raw.githubusercontent.com/Yukiroshi/Historical-Objects/refs/heads/main/Distinctive_emblem_for_cultural_property.svg";
+    icon-width: 10;
+    icon-position: center;
+    icon-offset-y: 20;
+    z-index: 20;
+}
