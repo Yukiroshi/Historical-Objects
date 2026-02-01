@@ -1,0 +1,8 @@
+meta {
+    title: "Historical Objects";
+    icon: "";
+    version: "1.0";
+    description: "Improved style for historical objects, adds new icons for niche tags.";
+    author: "Yukiroshi";
+    link: "";
+}
