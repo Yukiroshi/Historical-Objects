@@ -4,7 +4,7 @@ meta {
     version: "1.0";
     description: "Improved style for historical objects, adds new icons for niche tags.";
     author: "Yukiroshi";
-    link: "";
+    link: "https://github.com/Yukiroshi/Historical-Objects";
 }
 
 way[heritage]!:closed::highlight, way[historic]!:closed::highlight
@@ -54,3 +54,4 @@ node[heritage]::plaque
     icon-offset-y: 20;
     z-index: 20;
 }
+
